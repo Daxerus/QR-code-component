@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      display: flex;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      background-color: hsl(212, 45%, 89%);
+    }
+
+    #mainBox {
+      width: 322px;
+      height: 500px;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 20px;
+      -webkit-box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.81); 
+      box-shadow: 0px 5px 20px 1px rgba(0,0,0,0.1);
+    }
+
+    #qr {
+      margin-top: 15px;
+      margin-bottom: 19px;
+    }
+    
+    #qrImg {
+      border-radius: 10px;
+      height: 288px;  
+    }
+
+    .text{
+      font-family: 'Outfit', sans-serif;
+      
+    }
+
+    #mainText {
+      font-weight: 700;
+      font-size: 22.5px;
+      color: hsl(218, 44%, 22%)
+    }
+
+    #secText {
+      font-size: 15.5px;
+      font-weight: 400;
+      padding-top: 16px;
+      margin-bottom: 44px;
+      color: hsl(220, 15%, 55%)
+    }
+
+    @media screen and (max-width: 375px) {
+      body {
+       background-color: hsl(212, 68%, 35%);
+       
+     }
+    }
+
+  </style>
+</head>
+<body>
+  <div id="mainBox">
+    <div id="qr">
+      <img src="/images/image-qr-code.png" alt="qr code" height="288" width="288" id="qrImg"/>
+    </div>
+    <div id="mainText" class="text">
+      Improve your front-end <br/> skills by building projects
+    </div>
+    <div id="secText" class="text">
+      Scan the QR code to visit Frontend <br/> Mentor and take your coding skills to <br/> the next level
+    </div>
+  </div>
+</body>
+</html>
